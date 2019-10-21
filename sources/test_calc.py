@@ -42,7 +42,8 @@ class TestCalc(unittest.TestCase):
         concatenated string (in which the float is converted to a string)
         """
         result = calc.add2('abc', '5.5')
-        self.assertEqual(result, 'abc5.5')
+        # This will fail.
+        self.assertEqual(result, 'abcd5.5')
 
 if __name__ == '__main__':
     unittest.main()
